@@ -1,0 +1,26 @@
+In line sensor:
+  Placed between communicating devices to stop attacks
+    IPS
+    Impacts network latency
+Passive Sensors:
+  Monitors network segments
+  Can detect attacks but cannot stop them
+  Gets copies of Network traffic
+    IDS
+  Does not impact network latency
+Tap:
+  Appliance placed between two network devices
+  Best for packet collection without data loss
+  Not scalable
+  Will need several installed to capture traffic for other network segments
+MITM:
+  Attacker can use arp or some other method/protocol
+  Attackers can sniff or manipulate traffic that flows through them
+  Typically must be on the same network as the victim
+  Traffic capture is dependent on the attackers system and bandwidth
+SPAN:
+  Configured on the network switch
+  Best for packet collection of traffic from several switch ports at once
+  Can have a high degree of packet loss
+  Places burden on the network switch
+  Scalable
