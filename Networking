@@ -24,3 +24,52 @@ SPAN:
   Can have a high degree of packet loss
   Places burden on the network switch
   Scalable
+Fingerprinting and Host Identification
+ Variances in the RFX implementation for different OS's and systems enables the capability for fingerprinting
+  Tools can be used for fingerprinting and host identification
+Fingerprinting
+  Active OS fingerprinting
+    Easier
+    Send packets to the target and monitor response
+    Tools: Nmap, Xprobe, sinfb3
+  Passive OS fingerprinting
+    More difficult
+    Rely on sniffing packets
+      Tools: p0f, Ettercap, PRADS
+Open ports and protocols
+  Known Windows Ports
+  88 - Kerberos
+  137/138/139 - NetBIOS
+  445 SMB
+  Known linux ports
+  22 - SSH
+  111 - SunRPC
+Protocol Specific Identifiers
+  HTTP - User agent strings
+  SSH - Initial connection
+  NetBIOS - Name service
+P0F
+  Looks at variations in the TTL, Fragementation flag, default IP header packet length, window size, and TCP options
+  Configuration stored in: /etc/p0f/p0f.fp
+Baselining:
+  Snapshot of what the network looks like during a time frame, No industry standard, 7 days to establish the inital snapshot, Prerequisite information
+Network Baseline
+  Determines the current state of your network
+  Ascertain the current utilization of network resources
+  Identify normal vs. peak traffic time frames
+  Verify port/protocol usage
+Perform Baselining:
+  Networking Diagram
+  Known severs hosts and networking devices
+  Known ips, ports and protocols
+  Known forbidden IPs ports and protocols
+Scope and objectives of baselining
+  What traffic/protocols to capture
+  Which network segments
+  Which days
+  What times
+Network forensics methodologies
+  Footprinting
+  Network scanning
+  Network enumeration
+  Vulnerability Assessment
